@@ -1,0 +1,135 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+/*************
+ Feature Tables
+ *************/
+.pricing-table-checkmark {
+  display: block;
+  margin: 0 auto;
+  max-width: 20px; }
+
+#feature-table {
+  overflow-y: hidden; }
+
+.table-heading-headline {
+  margin-bottom: 0; }
+
+#profile-content-boxes .content-container {
+  margin-bottom: 0px; }
+
+.pricing-table-bodytext {
+  font-weight: bold;
+  color: #666666;
+  text-align: center; }
+
+.pricing-table-xmark {
+  width: 20px;
+  margin: 0 auto;
+  display: block; }
+
+#feature-table td {
+  border-bottom: solid 1px #fff;
+  padding: .6em; }
+
+.pricing-table__feature-row {
+  background-color: #ff6600; }
+
+.lightestgray {
+  background-color: #f2f2f2; }
+
+.lightgray {
+  background-color: #dddddd; }
+
+.mediumgray {
+  background-color: #b5b5b5; }
+
+.darkgray {
+  background-color: #545454; }
+
+.darkgray td {
+  color: #ffffff !important; }
+
+.whitecell {
+  background-color: #ffffff; }
+
+.lighttext {
+  color: #ffffff;
+  font-weight: 700; }
+
+.blackcell {
+  background-color: #000000;
+  padding: 1em; }
+
+.blackcell .table-heading-headline {
+  color: #ff6600;
+  font-size: 1.2em;
+  font-weight: 700; }
+
+.blackcell .table-heading-headline--subtext {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1em; }
+
+.blackcell .table-heading-headline--price {
+  color: #ffffff;
+  font-size: 1.6em;
+  font-weight: 700; }
+
+#feature-table {
+  margin: auto;
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%; }
+
+.top-left-rounded {
+  border-radius: 10px 0 0; }
+
+.top-right-rounded {
+  border-radius: 0 10px 0 0; }
+
+.bottom-left-rounded {
+  border-radius: 0 0 0 10px; }
+
+.bottom-right-rounded {
+  border-radius: 0 0 10px 0; }
+
+select {
+  color: black; }
+
+.select-join {
+  width: 100%;
+  padding: 17px 0;
+  display: block;
+  margin-top: 17px;
+  line-height: 21px;
+  font-size: 18px;
+  outline: 0;
+  color: #ffffff;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s; }
+
+.select-join:hover {
+  color: #ffffff; }
+
+.select-join--enabled {
+  background-color: #55AE56; }
+
+.table-heading-headline--type {
+  border: 3px solid #ff6600;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 0 !important;
+  padding: .5em; }
+
+.table-heading-headline--tabletype {
+  font-weight: 700;
+  font-size: 1.2em;
+  border: 3px solid black;
+  padding: .5em;
+  margin-bottom: 0px;
+  border-radius: 6px; }
