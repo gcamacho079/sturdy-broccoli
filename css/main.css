@@ -2,8 +2,8 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 /*************
- Feature Tables
- *************/
+ Updated Pricing Tables
+*************/
 .pricing-table-checkmark {
   display: block;
   margin: 0 auto;
@@ -33,7 +33,7 @@ body {
   padding: .6em; }
 
 .pricing-table__feature-row {
-  background-color: #ff6600; }
+  background-color: #f69832; }
 
 .lightestgray {
   background-color: #f2f2f2; }
@@ -62,7 +62,7 @@ body {
   padding: 1em; }
 
 .blackcell .table-heading-headline {
-  color: #ff6600;
+  color: #f69832;
   font-size: 1.2em;
   font-weight: 700; }
 
@@ -75,6 +75,9 @@ body {
   color: #ffffff;
   font-size: 1.6em;
   font-weight: 700; }
+
+.blackcell .monthly-price {
+  color: #f69832; }
 
 #feature-table {
   margin: auto;
@@ -120,7 +123,7 @@ select {
   background-color: #55AE56; }
 
 .table-heading-headline--type {
-  border: 3px solid #ff6600;
+  border: 3px solid #f69832;
   border-radius: 6px;
   text-align: center;
   margin-bottom: 0 !important;
