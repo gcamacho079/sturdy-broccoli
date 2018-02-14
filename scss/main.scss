@@ -2,17 +2,68 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+$lightgray:  #fdfdfd;
+$dfc-orange: #f69832;
+$top-row: darken($dfc-orange, 12%);
+$subtitle-row: #f2f2f2;
+$switch: #377bb5;
+$table-text: #333333;
 /*************
- Updated Pricing Tables
+Updated Pricing Tables
 *************/
-.pricing-table-checkmark {
-  display: block;
+
+.wrapper {
+  width:80%;
   margin: 0 auto;
-  max-width: 20px;
+}
+
+.toggleWrapper {
+  margin: 1em auto;
+  display: block;
+  text-align: center;
+}
+
+.priceToggle {
+  padding: 17px 20px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.priceToggle--active {
+  background-color: $switch;
+  border: 2px solid $switch;
+  color: #ffffff;
+}
+
+.priceToggle--inactive {
+  border: 2px solid #aaa;
+  color: #aaa;
 }
 
 #feature-table {
   overflow-y: hidden;
+  text-align: center;
+  margin: auto;
+  border-collapse: separate;
+  overflow-x: auto;
+  display: block;
+  width: 100%;
+  border-spacing: 1em 0;
+  color: $table-text;
+
+  colgroup {
+    width: fit-content;
+  }
+
+  td {
+    border-bottom: solid 1px $lightgray;
+    padding: .6em .2em;
+    background-color: $lightgray;
+    width: 33%;
+  }
 }
 
 .table-heading-headline {
@@ -23,107 +74,35 @@ body {
   margin-bottom: 0px;
 }
 
-.pricing-table-bodytext {
-  font-weight: bold;
-  color: #666666;
-  text-align: center;
+
+.member-type-cell {
+  background-color: $top-row;
+  padding: .8em .5em;
 }
 
-.pricing-table-xmark {
-  width: 20px;
-  margin: 0 auto;
-  display: block;
-}
-
-#feature-table td {
-  border-bottom: solid 1px #fff;
-  padding: .6em;
-
-}
-
-.pricing-table__feature-row {
-  background-color: #f69832;
-}
-
-.lightestgray {
-  background-color: #f2f2f2;
-}
-
-.lightgray {
-  background-color: #dddddd;
-}
-
-.mediumgray {
-  background-color: #b5b5b5;
-}
-
-.darkgray {
-  background-color: #545454;
-}
-
-.darkgray td {
-  color: #ffffff !important;
-}
-
-.whitecell {
-  background-color: #ffffff;
-}
-
-.lighttext {
+.price-cell {
+  background-color: $dfc-orange;
   color: #ffffff;
-  font-weight: 700;
+  padding: 1.5em 1em;
+
+  .price {
+    font-size: 2.5em;
+  }
 }
 
-.blackcell {
-  background-color: #000000;
-  padding: 1em;
+.subtitle-cell {
+  background-color: $subtitle-row;
 }
 
-.blackcell .table-heading-headline {
-  color: #f69832;
-  font-size: 1.2em;
-  font-weight: 700;
-}
-
-.blackcell .table-heading-headline--subtext {
-  color: #ffffff;
-  font-weight: 400;
+.table-expander {
+  background: none;
   font-size: 1em;
+  border: none;
+  text-transform: uppercase;
 }
 
-.blackcell .table-heading-headline--price {
-  color: #ffffff;
-  font-size: 1.6em;
-  font-weight: 700;
-}
-
-.blackcell .monthly-price {
-  color: #f69832;
-}
-
-#feature-table {
-  margin: auto;
-  border-collapse: collapse;
-  overflow-x: auto;
-  display: block;
-  width: fit-content;
-  max-width: 100%;
-}
-
-.top-left-rounded {
-  border-radius: 10px 0 0;
-}
-
-.top-right-rounded {
-  border-radius: 0 10px 0 0;
-}
-
-.bottom-left-rounded {
-  border-radius: 0 0 0 10px;
-}
-
-.bottom-right-rounded {
-  border-radius: 0 0 10px 0;
+.row--hidden {
+  display: none;
 }
 
 select {
@@ -140,10 +119,10 @@ select {
   outline: 0;
   color: #ffffff;
   transition-duration: .3s;
-}
 
-.select-join:hover {
-  color: #ffffff;
+  :hover {
+    color: #ffffff;
+  }
 }
 
 .select-join--enabled {
@@ -151,9 +130,9 @@ select {
 }
 
 .table-heading-headline--type {
-  border: 3px solid #f69832;
+  border: 3px solid $dfc-orange;
   border-radius: 6px;
-  text-align: center;
+
   margin-bottom: 0 !important;
   padding:.5em;
 }

@@ -2,15 +2,54 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 /*************
- Updated Pricing Tables
+Updated Pricing Tables
 *************/
-.pricing-table-checkmark {
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+.toggleWrapper {
+  margin: 1em auto;
   display: block;
-  margin: 0 auto;
-  max-width: 20px; }
+  text-align: center; }
+
+.priceToggle {
+  padding: 17px 20px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.priceToggle--active {
+  background-color: #377bb5;
+  border: 2px solid #377bb5;
+  color: #ffffff; }
+
+.priceToggle--inactive {
+  border: 2px solid #aaa;
+  color: #aaa; }
 
 #feature-table {
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  text-align: center;
+  margin: auto;
+  border-collapse: separate;
+  overflow-x: auto;
+  display: block;
+  width: 100%;
+  border-spacing: 1em 0;
+  color: #333333; }
+  #feature-table colgroup {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  #feature-table td {
+    border-bottom: solid 1px #fdfdfd;
+    padding: .6em .2em;
+    background-color: #fdfdfd;
+    width: 33%; }
 
 .table-heading-headline {
   margin-bottom: 0; }
@@ -18,88 +57,28 @@ body {
 #profile-content-boxes .content-container {
   margin-bottom: 0px; }
 
-.pricing-table-bodytext {
-  font-weight: bold;
-  color: #666666;
-  text-align: center; }
+.member-type-cell {
+  background-color: #e17a0a;
+  padding: .8em .5em; }
 
-.pricing-table-xmark {
-  width: 20px;
-  margin: 0 auto;
-  display: block; }
+.price-cell {
+  background-color: #f69832;
+  color: #ffffff;
+  padding: 1.5em 1em; }
+  .price-cell .price {
+    font-size: 2.5em; }
 
-#feature-table td {
-  border-bottom: solid 1px #fff;
-  padding: .6em; }
-
-.pricing-table__feature-row {
-  background-color: #f69832; }
-
-.lightestgray {
+.subtitle-cell {
   background-color: #f2f2f2; }
 
-.lightgray {
-  background-color: #dddddd; }
+.table-expander {
+  background: none;
+  font-size: 1em;
+  border: none;
+  text-transform: uppercase; }
 
-.mediumgray {
-  background-color: #b5b5b5; }
-
-.darkgray {
-  background-color: #545454; }
-
-.darkgray td {
-  color: #ffffff !important; }
-
-.whitecell {
-  background-color: #ffffff; }
-
-.lighttext {
-  color: #ffffff;
-  font-weight: 700; }
-
-.blackcell {
-  background-color: #000000;
-  padding: 1em; }
-
-.blackcell .table-heading-headline {
-  color: #f69832;
-  font-size: 1.2em;
-  font-weight: 700; }
-
-.blackcell .table-heading-headline--subtext {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 1em; }
-
-.blackcell .table-heading-headline--price {
-  color: #ffffff;
-  font-size: 1.6em;
-  font-weight: 700; }
-
-.blackcell .monthly-price {
-  color: #f69832; }
-
-#feature-table {
-  margin: auto;
-  border-collapse: collapse;
-  overflow-x: auto;
-  display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  max-width: 100%; }
-
-.top-left-rounded {
-  border-radius: 10px 0 0; }
-
-.top-right-rounded {
-  border-radius: 0 10px 0 0; }
-
-.bottom-left-rounded {
-  border-radius: 0 0 0 10px; }
-
-.bottom-right-rounded {
-  border-radius: 0 0 10px 0; }
+.row--hidden {
+  display: none; }
 
 select {
   color: black; }
@@ -115,9 +94,8 @@ select {
   color: #ffffff;
   -webkit-transition-duration: .3s;
           transition-duration: .3s; }
-
-.select-join:hover {
-  color: #ffffff; }
+  .select-join :hover {
+    color: #ffffff; }
 
 .select-join--enabled {
   background-color: #55AE56; }
@@ -125,7 +103,6 @@ select {
 .table-heading-headline--type {
   border: 3px solid #f69832;
   border-radius: 6px;
-  text-align: center;
   margin-bottom: 0 !important;
   padding: .5em; }
 
