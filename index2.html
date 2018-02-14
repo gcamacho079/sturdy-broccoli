@@ -11,7 +11,7 @@
 <body>
 
   <div class="wrapper">
-    <div class="toggleWrapper"><button class="priceToggle priceToggle--active">Annually</button><button class="priceToggle priceToggle--inactive">Monthly</button></div>
+    <div class="toggleWrapper"><button data-this="annually" class="priceToggle priceToggle--active">Annually</button><button data-this="monthly" class="priceToggle priceToggle--inactive">Monthly</button></div>
     <table id="feature-table">
       <colgroup>
         <col class="first-column" />
@@ -28,11 +28,11 @@
 
         <tr>
 
-          <th class="price-cell"><span class="price">$117</span> / mo<br />
+          <th class="price-cell"><span class="price" id="basicPrice">$117</span> / mo<br />
           </th>
-          <th class="price-cell"><span class="price">$137</span> / mo<br />
+          <th class="price-cell"><span class="price" id="proPrice">$137</span> / mo<br />
           </th>
-          <th class="price-cell"><span class="price">$197</span> / mo<br />
+          <th class="price-cell"><span class="price" id="preferredPrice">$197</span> / mo<br />
           </th>
         </tr>
         <tr>
