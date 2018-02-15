@@ -51,12 +51,6 @@ Updated Pricing Tables
     background-color: #fdfdfd;
     width: 33%; }
 
-.table-heading-headline {
-  margin-bottom: 0; }
-
-#profile-content-boxes .content-container {
-  margin-bottom: 0px; }
-
 .member-type-cell {
   background-color: #e17a0a;
   padding: .8em .5em;
@@ -71,10 +65,20 @@ Updated Pricing Tables
     font-size: 1.5em;
     font-size: 4.8vw; }
 
+span.annual-disclaimer {
+  font-style: italic;
+  font-weight: 300; }
+
 .subtitle-cell {
   background-color: #f2f2f2;
   padding: .8em .5em;
   font-weight: 700; }
+
+.highlight-diff {
+  font-weight: bold; }
+
+.highlight-diff--urgent {
+  color: #f48710; }
 
 .table-expander {
   background: #f9b56d;
@@ -99,9 +103,6 @@ td > .fa-check {
 
 .fa-bookmark {
   color: red; }
-
-select {
-  color: black; }
 
 .select-join {
   width: 100%;

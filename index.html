@@ -3,249 +3,315 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Pricing Table</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Pricing Table - General Contractor</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 <body>
 
+  <div class="wrapper">
+    <div class="toggleWrapper"><button data-this="annually" class="priceToggle priceToggle--active">Annually</button><button data-this="monthly" class="priceToggle priceToggle--inactive">Monthly</button></div>
+    <table id="feature-table">
+      <colgroup>
+        <col class="first-column" />
+        <col class="second-column" />
+        <col class="third-column" />
+      </colgroup>
+      <thead>
+        <tr>
 
-  <table id="feature-table" width="100%"><colgroup> <col class="darkgray" /> <col class="lightestgray" /> <col class="lightgray" /> <col class="mediumgray" /> </colgroup>
-    <thead>
-      <tr>
-        <th class="whitecell"></th>
-        <th class="top-left-rounded blackcell" align="center"><p class="table-heading-headline table-heading-headline--type" style="text-align: center;">Basic</p></th>
-        <th class="blackcell" align="center"><p class="table-heading-headline table-heading-headline--type" style="text-align: center;">Pro</p></th>
-        <th class="blackcell top-right-rounded" align="center"><p class="table-heading-headline table-heading-headline--type" style="text-align: center;">Preferred</p></th>
-      </tr>
+          <th class="member-type-cell">Basic</th>
+          <th class="member-type-cell">Pro</th>
+          <th class="member-type-cell">Preferred</th>
+        </tr>
 
-      <tr>
-        <th class="whitecell"></th>
-        <th class="blackcell" align="center"><span class="table-heading-headline--price" style="text-align: center;">$137 / Mo</span><br />
-          <span class="table-heading-headline--subtext" style="text-align: center;">Billed Annually</span></th>
-          <th class="blackcell" align="center"><span class="table-heading-headline--price" style="text-align: center;">$157 / Mo</span><br />
-            <span class="table-heading-headline--subtext" style="text-align: center;">Billed Annually</span></th>
-            <th class="blackcell" align="center"><span class="table-heading-headline--price" style="text-align: center;">$227 / Mo</span><br />
-              <span class="table-heading-headline--subtext" style="text-align: center;">Billed Annually</span></th>
-            </tr>
-            <tr>
-              <th class="whitecell"></th>
-              <th class="blackcell" align="center"><span class="table-heading-headline--subtext monthly-price" style="text-align: center;">Billed Monthly: $167/Mo</span></th>
-              <th class="blackcell" align="center"><span class="table-heading-headline--subtext monthly-price" style="text-align: center;">Billed Monthly: $197/Mo</span></th>
-              <th class="blackcell" align="center"><span class="table-heading-headline--subtext monthly-price" style="text-align: center;">Billed Monthly: $277/Mo</span></th>
-            </tr>
-            <tr class="pricing-table__feature-row">
-              <th class="top-left-rounded" style="text-align: center;" align="center">
-                <h2 style="margin: 15px 0px; font-size: 27px; line-height: 40.5px;" data-fontsize="28" data-lineheight="42">Plan Features</h2>
-              </th>
-              <th style="text-align: center;" colspan="3">
-                <strong>(Annual compliance and background screening required for each owner)</strong></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="lighttext feature-description" align="center">Verified Contractor Badge</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">SEO Optimized Profile</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Secure Dashboard Login</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">One-Click Social Login</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Google Maps Integration</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Message Center w/ Weather Alerts</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Click-to-Call From Profile</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Contractor License Lookup</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Building Permit Links by State</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Home &amp; Trade Show Listing</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Safety Checklists</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Construction White Papers</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Trade Listings</td>
-                <td class="pricing-table-bodytext">1</td>
-                <td class="pricing-table-bodytext">5</td>
-                <td class="pricing-table-bodytext">Unlimited</td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Service Areas - City, ZIP, or County</td>
-                <td class="pricing-table-bodytext">1</td>
-                <td class="pricing-table-bodytext">3</td>
-                <td class="pricing-table-bodytext">Unlimited</td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Send/Receive Messages</td>
-                <td class="pricing-table-bodytext">Receive Only</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Send/Receive Bid Invites</td>
-                <td class="pricing-table-bodytext">Receive Only</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Request, Manage, Display Reviews</td>
-                <td align="left"><img class="pricing-table-xmark" src="/wp-content/uploads/xmark.png" alt="x" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Link to Web Site</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Link to Social Media Accounts</td>
-                <td align="left"><img class="pricing-table-xmark" src="/wp-content/uploads/xmark.png" alt="x" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Member Badge</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Photo Albums</td>
-                <td class="pricing-table-bodytext">1</td>
-                <td class="pricing-table-bodytext">Unlimited</td>
-                <td class="pricing-table-bodytext">Unlimited</td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">View and Post Videos</td>
-                <td class="pricing-table-bodytext">View Only</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Listen/Upload Podcasts</td>
-                <td class="pricing-table-bodytext">Listen Only</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">View/Post Blog Content</td>
-                <td class="pricing-table-bodytext">View Only</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Manage Multiple Business Locations</td>
-                <td class="pricing-table-bodytext">1 Location</td>
-                <td class="pricing-table-bodytext">2 Locations</td>
-                <td class="pricing-table-bodytext">5 Locations</td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">View/Post Job Openings</td>
-                <td class="pricing-table-bodytext">View Only</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">View/Post Classifieds: Tools &amp; Equipment</td>
-                <td class="pricing-table-bodytext">View Only</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">View/Post Classifieds: Building Materials</td>
-                <td class="pricing-table-bodytext">View Only</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">View/Post Upcoming Projects</td>
-                <td class="pricing-table-bodytext">View Only</td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description" align="center">Bookmark Favorites</td>
-                <td align="left"><img class="pricing-table-xmark" src="/wp-content/uploads/xmark.png" alt="x" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-                <td align="left"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" /></td>
-              </tr>
-              <tr>
-                <td class="lighttext feature-description bottom-left-rounded" align="center">Risk Management</td>
-                <td align="left"><img class="pricing-table-xmark" src="/wp-content/uploads/xmark.png" alt="x" /></td>
-                <td align="left"><img class="pricing-table-xmark" src="/wp-content/uploads/xmark.png" alt="x" /></td>
-                <td class="pricing-table-bodytext"><img class="pricing-table-checkmark" src="/wp-content/uploads/table-check.png" alt="checkmark" />
-                  Onboarding Included</td>
-                </tr>
+        <tr>
 
+          <th class="price-cell"><span class="price" id="basicPrice">$137</span> / mo<br /><span class="annual-disclaimer">Billed Annually</span>
+          </th>
+          <th class="price-cell"><span class="price" id="proPrice">$157</span> / mo<br /><span class="annual-disclaimer">Billed Annually</span>
+          </th>
+          <th class="price-cell"><span class="price" id="preferredPrice">$227</span> / mo<br /><span class="annual-disclaimer">Billed Annually</span>
+          </th>
+        </tr>
+        <tr>
 
+          <th class="subtitle-cell">A simple solution for the small business</span></th>
+          <th class="subtitle-cell">More solutions for growing business</th>
+          <th class="subtitle-cell">The business solution with Risk Management</th>
+        </tr>
 
-                <tr>
-                  <td class="whitecell feature-description"></td>
-                  <td class="bottom-left-rounded" align="center">
-                    <a id="basic-select-button" class="select-join select-join--enabled" href="http://www.directoryforcontractors.org/checkout/36" target="_blank" type="button">Join</a></td>
-                  <td align="center">
-                    <a id="pro-select-button" class="select-join select-join--enabled" target="_blank" type="button" href="http://www.directoryforcontractors.org/checkout/38">Join</a></td>
-                  <td class="bottom-right-rounded" align="center">
-                    <a id="preferred-select-button" class="select-join select-join--enabled" target="_blank" type="button" href="http://www.directoryforcontractors.org/checkout/40">Join</a></td>
-                </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="highlight-diff">1</span> Trade Listing</td>
+          <td><span class="highlight-diff">5</span> Trade Listings</td>
+          <td><span class="highlight-diff">Unlimited</span> Trade Listings</td>
+        </tr>
+        <tr>
+          <td><span class="highlight-diff">1</span> Service Area</td>
+          <td><span class="highlight-diff">3</span> Service Areas</td>
+          <td><span class="highlight-diff">Unlimited</span> Service Areas</td>
+        </tr>
+
+        <tr>
+          <td>Receive Messages</td>
+          <td>Send/Receive Messages</td>
+          <td>Send/Receive Messages</td>
+        </tr>
+
+        <tr>
+          <td><span class="highlight-diff">1</span> Photo Album</td>
+          <td><span class="highlight-diff">Unlimited</span> Photo Albums</td>
+          <td><span class="highlight-diff">Unlimited</span> Photo Albums</td>
+
+        </tr>
+        <tr>
+
+          <td>Manage <span class="highlight-diff">Single</span> Business Location</td>
+          <td>Manage <span class="highlight-diff">2</span> Business Locations</td>
+          <td>Manage Up To <span class="highlight-diff">5</span> Business Locations</td>
+
+        </tr>
+
+        <tr>
+          <td><em>Videos, Podcasts, Blogs, Job Boards, Classifieds, Upcoming Projects in View Only Mode</em></td>
+          <td>Link to Social Media Accounts</td>
+          <td>Link to Social Media Accounts</td>
+
+        </tr>
+
+        <tr>
+
+          <td></td>
+          <td>Send/Receive Bid Invites</td>
+          <td>Send/Receive Bid Invites</td>
+
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Risk Management w/ Onboarding</td>
+
+        </tr>
+
+        <tr>
+          <td colspan="3"><button class="table-expander expander--closed">More Details <span class="expander-arrow">▼</span></button></td>
+
+        </tr>
+
+        <tr class="row--hidden">
+
+          <td>Verified Contractor Badge</td>
+          <td>Verified Contractor Badge</td>
+          <td>Verified Contractor Badge</td>
+        </tr>
+        <tr class="row--hidden">
+          <td>SEO Optimized Profile</td>
+          <td>SEO Optimized Profile</td>
+          <td>SEO Optimized Profile</td>
+
+        </tr>
+        <tr class="row--hidden">
+          <td>Secure Dashboard Login</td>
+          <td>Secure Dashboard Login</td>
+          <td>Secure Dashboard Login</td>
+
+        </tr>
+        <tr class="row--hidden">
+          <td>One-Click Social Login</td>
+          <td>One-Click Social Login</td>
+          <td>One-Click Social Login</td>
+        </tr>
+
+        <tr class="row--hidden">
+          <td>Mobile Optimized Listing</td>
+          <td>Mobile Optimized Listing</td>
+          <td>Mobile Optimized Listing</td>
+        </tr>
+
+        <tr class="row--hidden">
+          <td>Google Maps Integration</td>
+          <td>Google Maps Integration</td>
+          <td>Google Maps Integration</td>
+        </tr>
+        <tr class="row--hidden">
+          <td>Message Center w/ Weather Alerts</td>
+          <td>Message Center w/ Weather Alerts</td>
+          <td>Message Center w/ Weather Alerts</td>
+
+        </tr>
+        <tr class="row--hidden">
+          <td>Click-to-Call From Profile</td>
+          <td>Click-to-Call From Profile</td>
+          <td>Click-to-Call From Profile</td>
+
+        </tr>
+        <tr class="row--hidden">
+          <td>Contractor License Lookup</td>
+          <td>Contractor License Lookup</td>
+          <td>Contractor License Lookup</td>
+
+        </tr>
+        <tr class="row--hidden">
+          <td>Building Permit Links by State</td>
+          <td>Building Permit Links by State</td>
+          <td>Building Permit Links by State</td>
+
+        </tr>
+        <tr class="row--hidden">
+          <td>Home &amp; Trade Show Listing</td>
+          <td>Home &amp; Trade Show Listing</td>
+          <td>Home &amp; Trade Show Listing</td>
+
+        </tr>
+        <tr class="row--hidden">
+          <td>Safety Checklists</td>
+          <td>Safety Checklists</td>
+          <td>Safety Checklists</td>
+
+        </tr>
+
+        <tr class="row--hidden">
+          <td>Link to Web Site</td>
+          <td>Link to Web Site</td>
+          <td>Link to Web Site</td>
+
+        </tr>
+
+        <tr class="row--hidden">
+          <td>Member Badge</td>
+          <td>Member Badge</td>
+          <td>Member Badge</td>
+        </tr>
+
+        <tr class="row--hidden">
+          <td></td>
+          <td>Add Unlimited Videos</td>
+          <td>Add Unlimited Videos</td>
+        </tr>
+
+        <tr class="row--hidden">
+          <td></td>
+          <td>Listen/Upload Podcasts</td>
+          <td>Listen/Upload Podcasts</td>
+        </tr>
+
+        <tr class="row--hidden">
+          <td></td>
+          <td>View/Post Blog Content</td>
+          <td>View/Post Blog Content</td>
+        </tr>
+
+        <tr class="row--hidden">
+          <td></td>
+          <td>View/Post Job Openings</td>
+          <td>View/Post Job Openings</td>
+        </tr>
+
+        <tr class="row--hidden">
+          <td></td>
+          <td>View/Post Classifieds: Tools & Equipment</td>
+          <td>View/Post Classifieds: Tools & Equipment</td>
+        </tr>
+
+        <tr class="row--hidden">
+          <td></td>
+          <td>View/Post Classifieds: Building Materials</td>
+          <td>View/Post Classifieds: Building Materials</td>
+        </tr>
+
+        <tr class="row--hidden">
+          <td></td>
+          <td>View/Post Upcoming Projects</td>
+          <td>View/Post Upcoming Projects</td>
+        </tr>
+
+        <tr class="row--hidden">
+          <td ></td>
+          <td>Bookmark Favorites</td>
+          <td>Bookmark Favorites</td>
+        </tr>
+
+        <tr class="row--hidden">
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-bookmark"></i><strong>Risk Management: Onboarding Included</strong></td>
+        </tr>
+
+        <tr class="row--hidden row--rm">
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-check"></i> Risk Management Library</td>
+        </tr>
+
+        <tr class="row--hidden row--rm">
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-check"></i> The HR and Benefits Library</td>
+        </tr>
+
+        <tr class="row--hidden row--rm">
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-check"></i> Certificates of Insurance (COI) Track</td>
+        </tr>
+
+        <tr class="row--hidden row--rm">
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-check"></i> Training Track</td>
+        </tr>
+
+        <tr class="row--hidden row--rm">
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-check"></i> Incident Track</td>
+        </tr>
+
+        <tr class="row--hidden row--rm">
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-check"></i> Safety Data Sheet (SDS) Tracker</td>
+        </tr>
+
+        <tr class="row--hidden row--rm">
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-check"></i> Behavior Based Safety Track</td>
+        </tr>
+
+        <tr class="row--hidden row--rm">
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-check"></i> Safety Data Sheet (SDS) Tracker</td>
+        </tr>
+
+        <tr class="row--hidden row--rm">
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-check"></i> Job Description Track</td>
+        </tr>
+
+        <tr class="row--hidden row--rm">
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-check"></i> OSHA 300 Log Reporting Tool</td>
+        </tr>
+
+        <tr>
+          <td>
+            <a id="basic-select-button" class="select-join" href="http://www.directoryforcontractors.org/checkout/36" target="_blank" type="button">Join</a></td>
+            <td >
+              <a id="pro-select-button" class="select-join" target="_blank" type="button" href="http://www.directoryforcontractors.org/checkout/38">Join</a></td>
+              <td>
+                <a id="preferred-select-button" class="select-join" target="_blank" type="button" href="http://www.directoryforcontractors.org/checkout/40">Join</a></td>
               </tbody>
             </table>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-            <script src="js/script.js" type="text/javascript"></script>
-          </body>
-          </html>
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+          <script src="js/script.js" type="text/javascript"></script>
+        </body>
+        </html>

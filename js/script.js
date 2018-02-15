@@ -36,11 +36,13 @@ var pricingTable = {
       $("#basicPrice").html(monthlyBasic);
       $("#proPrice").html(monthlyPro);
       $("#preferredPrice").html(monthlyPreferred);
+      $(".annual-disclaimer").toggle();
     }
     else {
       $("#basicPrice").html(annuallyBasic);
       $("#proPrice").html(annuallyPro);
       $("#preferredPrice").html(annuallyPreferred);
+      $(".annual-disclaimer").toggle();
     }
   }
 }
