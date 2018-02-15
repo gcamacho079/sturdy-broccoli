@@ -147,10 +147,10 @@ td > .fa-check {
   color: #ffffff;
   transition-duration: .3s;
   background-color: $switch;
-}
 
-a.select-join:hover {
-  background-color: $join-hover;
+  &:hover {
+    background-color: $join-hover;
+  }
 }
 
 @media screen and (min-width: 800px) {

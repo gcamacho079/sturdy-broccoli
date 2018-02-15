@@ -116,9 +116,8 @@ td > .fa-check {
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
   background-color: #377bb5; }
-
-a.select-join:hover {
-  background-color: #295b86; }
+  .select-join:hover {
+    background-color: #295b86; }
 
 @media screen and (min-width: 800px) {
   #feature-table {
