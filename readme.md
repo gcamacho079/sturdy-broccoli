@@ -1,4 +1,4 @@
-# Project Title
+# Pricing Table Redesign
 
 Pricing table built for product website, with buttons that toggle between annual and monthly pricing!
 
