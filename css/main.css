@@ -6,6 +6,7 @@ Updated Pricing Tables
 *************/
 .wrapper {
   width: 100%;
+  max-width: 1300px;
   margin: 0 auto; }
 
 .toggleWrapper {
@@ -45,16 +46,10 @@ Updated Pricing Tables
     width: -moz-fit-content;
     width: fit-content; }
   #feature-table td {
-    border-bottom: solid 1px #fdfdfd;
-    padding: .6em .2em !important;
+    border: none;
+    padding: .6em .6em !important;
     background-color: #fdfdfd;
     width: 33%; }
-
-@media screen and (min-width: 800px) {
-  #feature-table {
-    border-collapse: separate !important;
-    border-spacing: 1em 0 !important;
-    font-size: 1em; } }
 
 .table-heading-headline {
   margin-bottom: 0; }
@@ -64,7 +59,9 @@ Updated Pricing Tables
 
 .member-type-cell {
   background-color: #e17a0a;
-  padding: .8em .5em; }
+  padding: .8em .5em;
+  font-weight: 700;
+  font-size: 1.3em; }
 
 .price-cell {
   background-color: #f69832;
@@ -74,18 +71,16 @@ Updated Pricing Tables
     font-size: 1.5em;
     font-size: 4.8vw; }
 
-@media screen and (min-width: 800px) {
-  .price-cell .price {
-    font-size: 2.5em;
-    font-size: 3.5vw; } }
-
 .subtitle-cell {
   background-color: #f2f2f2;
-  padding: .8em .5em; }
+  padding: .8em .5em;
+  font-weight: 700; }
 
 .table-expander {
-  background: none;
-  font-size: 1em;
+  background: #f9b56d;
+  font-size: 1.3em;
+  border-radius: 6px;
+  color: #ffffff;
   border: none;
   text-transform: uppercase;
   padding: .6em;
@@ -93,6 +88,17 @@ Updated Pricing Tables
 
 .row--hidden {
   display: none; }
+
+.row--rm {
+  text-align: left; }
+  .row--rm td:last-child {
+    background-color: #f0f0f0 !important; }
+
+td > .fa-check {
+  color: #55ae56; }
+
+.fa-bookmark {
+  color: red; }
 
 select {
   color: black; }
@@ -107,9 +113,24 @@ select {
   outline: 0;
   color: #ffffff;
   -webkit-transition-duration: .3s;
-          transition-duration: .3s; }
-  .select-join :hover {
-    color: #ffffff; }
+          transition-duration: .3s;
+  background-color: #377bb5; }
 
-.select-join--enabled {
-  background-color: #55AE56; }
+a.select-join:hover {
+  background-color: #295b86; }
+
+@media screen and (min-width: 800px) {
+  #feature-table {
+    border-collapse: separate !important;
+    border-spacing: 1em 0 !important;
+    font-size: 1em; }
+    #feature-table td {
+      border-bottom: solid 1px #f8f8f8; }
+    #feature-table .row--rm td:last-child {
+      background-color: #f0f0f0 !important;
+      border-color: #f0f0f0; }
+  .price-cell .price {
+    font-size: 2.5em;
+    font-size: 3.2vw; }
+  td > .fa {
+    margin-right: 1em; } }
