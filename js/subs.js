@@ -20,13 +20,13 @@ var pricingTable = {
   },
 
   togglePrice: function() {
-    const monthlyBasic = "$167";
-    const monthlyPro = "$197";
-    const monthlyPreferred = "$277";
+    const monthlyBasic = "$147";
+    const monthlyPro = "$187";
+    const monthlyPreferred = "$247";
 
-    const annuallyBasic = "$137";
-    const annuallyPro = "$157";
-    const annuallyPreferred = "$227";
+    const annuallyBasic = "$117";
+    const annuallyPro = "$147";
+    const annuallyPreferred = "$197";
 
     $(".priceToggle").removeClass("priceToggle--active");
     $(this).addClass("priceToggle--active");

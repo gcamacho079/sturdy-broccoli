@@ -10,7 +10,8 @@ $subtitle-row: #f2f2f2;
 $table-border: darken($lightgray, 2%);
 $switch: #377bb5;
 $table-text: #333333;
-$join-hover: darken($switch, 12%);
+$join: #5cb85c;
+$join-hover: #449d44;
 $rm-cells: darken($lightgray, 5%);
 /*************
 Updated Pricing Tables
@@ -44,6 +45,14 @@ Updated Pricing Tables
   background-color: $switch;
   border: 2px solid $switch;
   color: #ffffff;
+}
+
+.paymentDisclaimer {
+  text-align: center;
+}
+
+.monthly-disclaimer {
+  display: none;
 }
 
 #feature-table {
@@ -146,7 +155,7 @@ td > .fa-check {
   outline: 0;
   color: #ffffff;
   transition-duration: .3s;
-  background-color: $switch;
+  background-color: $join;
 
   &:hover {
     background-color: $join-hover;

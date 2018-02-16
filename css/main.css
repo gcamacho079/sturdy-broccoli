@@ -32,6 +32,12 @@ Updated Pricing Tables
   border: 2px solid #377bb5;
   color: #ffffff; }
 
+.paymentDisclaimer {
+  text-align: center; }
+
+.monthly-disclaimer {
+  display: none; }
+
 #feature-table {
   overflow-y: hidden;
   text-align: center;
@@ -115,9 +121,9 @@ td > .fa-check {
   color: #ffffff;
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
-  background-color: #377bb5; }
+  background-color: #5cb85c; }
   .select-join:hover {
-    background-color: #295b86; }
+    background-color: #449d44; }
 
 @media screen and (min-width: 800px) {
   #feature-table {
