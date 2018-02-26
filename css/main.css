@@ -57,8 +57,20 @@ Updated Pricing Tables
   #feature-table td {
     border: none;
     padding: .6em .6em !important;
-    background-color: #fdfdfd;
     width: 33%; }
+
+.first-column {
+  background-color: #fbefdb; }
+
+.second-column {
+  background-color: #FEE2B1; }
+
+.third-column {
+  background-color: #FEDBA9 !important; }
+
+tr.join-row td,
+.more-button-row {
+  background-color: #fdfdfd; }
 
 .member-type-cell {
   background-color: #e17a0a;
@@ -104,8 +116,6 @@ span.annual-disclaimer {
 
 .row--rm {
   text-align: left; }
-  .row--rm td:last-child {
-    background-color: #f0f0f0 !important; }
 
 td > .fa-check {
   color: #55ae56; }
@@ -133,10 +143,7 @@ td > .fa-check {
     border-collapse: separate !important;
     border-spacing: 1em 0 !important;
     font-size: 1em; }
-    #feature-table td {
-      border-bottom: solid 1px #f8f8f8; }
     #feature-table .row--rm td:last-child {
-      background-color: #f0f0f0 !important;
       border-color: #f0f0f0; }
   .price-cell .price {
     font-size: 2.5em;
