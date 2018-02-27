@@ -57,30 +57,29 @@ Updated Pricing Tables
   #feature-table td {
     border: none;
     padding: .6em .6em !important;
+    background-color: #fdfdfd;
     width: 33%; }
 
-.first-column {
-  background-color: #fbefdb; }
+th.member-type-cell:nth-child(1),
+th.price-cell:nth-child(1) {
+  background-color: #f9bd7b; }
 
-.second-column {
-  background-color: #FEE2B1; }
+th.member-type-cell:nth-child(2),
+th.price-cell:nth-child(2) {
+  background-color: #f7a44a; }
 
-.third-column {
-  background-color: #FEDBA9 !important; }
-
-tr.join-row td,
-.more-button-row {
-  background-color: #fdfdfd; }
+th.member-type-cell:nth-child(3),
+th.price-cell:nth-child(3) {
+  background-color: #f58c1a; }
 
 .member-type-cell {
-  background-color: #e17a0a;
   padding: .8em .5em;
   font-weight: 700;
   font-size: 1.3em; }
 
 .price-cell {
-  background-color: #f69832;
-  color: #ffffff;
+  /*background-color: $dfc-orange;*/
+  color: #333333;
   padding: 1.5em 1em; }
   .price-cell .price {
     font-size: 1.5em;
@@ -116,6 +115,8 @@ span.annual-disclaimer {
 
 .row--rm {
   text-align: left; }
+  .row--rm td:last-child {
+    background-color: #f0f0f0 !important; }
 
 td > .fa-check {
   color: #55ae56; }
@@ -143,7 +144,10 @@ td > .fa-check {
     border-collapse: separate !important;
     border-spacing: 1em 0 !important;
     font-size: 1em; }
+    #feature-table td {
+      border-bottom: solid 1px #f8f8f8; }
     #feature-table .row--rm td:last-child {
+      background-color: #f0f0f0 !important;
       border-color: #f0f0f0; }
   .price-cell .price {
     font-size: 2.5em;

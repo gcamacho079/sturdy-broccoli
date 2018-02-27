@@ -13,6 +13,10 @@ $table-text: #333333;
 $join: #5cb85c;
 $join-hover: #449d44;
 $rm-cells: darken($lightgray, 5%);
+
+$left-column: #f9bd7b;
+$middle-column: #f7a44a;
+$right-column: #f58c1a;
 /*************
 Updated Pricing Tables
 *************/
@@ -76,37 +80,33 @@ Updated Pricing Tables
   td {
     border: none;
     padding: .6em .6em !important;
+    background-color: $lightgray;
     width: 33%;
   }
 }
 
-.first-column {
-  background-color: #fbefdb;
-}
-
-.second-column {
-  background-color: #FEE2B1;
-}
-
-.third-column {
-  background-color: #FEDBA9 !important;
-}
-
-tr.join-row td,
-.more-button-row {
-  background-color: $lightgray;
+th.member-type-cell,
+th.price-cell {
+  &:nth-child(1) {
+    background-color: $left-column;
+  }
+  &:nth-child(2) {
+    background-color: $middle-column;
+  }
+  &:nth-child(3) {
+    background-color: $right-column;
+  }
 }
 
 .member-type-cell {
-  background-color: $top-row;
   padding: .8em .5em;
   font-weight: 700;
   font-size: 1.3em;
 }
 
 .price-cell {
-  background-color: $dfc-orange;
-  color: #ffffff;
+  /*background-color: $dfc-orange;*/
+  color: #333333;
   padding: 1.5em 1em;
 
   .price {
@@ -151,6 +151,10 @@ span.annual-disclaimer {
 
 .row--rm {
   text-align: left;
+
+  td:last-child {
+    background-color: $rm-cells !important;
+  }
 }
 
 td > .fa-check {
@@ -184,8 +188,12 @@ td > .fa-check {
     border-spacing: 1em 0 !important;
     font-size: 1em;
 
+    td {
+      border-bottom: solid 1px $table-border;
+    }
 
     .row--rm td:last-child {
+      background-color: $rm-cells !important;
       border-color: $rm-cells;
     }
   }

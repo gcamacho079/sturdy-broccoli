@@ -1,20 +1,20 @@
 var pricingTable = {
   init: function() {
-    jQuery(".table-expander").click(pricingTable.toggleTable);
-    jQuery(".priceToggle").click(pricingTable.togglePrice);
+    $(".table-expander").click(pricingTable.toggleTable);
+    $(".priceToggle").click(pricingTable.togglePrice);
   },
 
   toggleTable: function() {
-    if (jQuery(".table-expander").hasClass("expander--closed")) {
-      jQuery(".row--hidden").toggle();
-      jQuery(".expander-arrow").text("▲");
-      jQuery(this).removeClass("expander--closed")
+    if ($(".table-expander").hasClass("expander--closed")) {
+      $(".row--hidden").toggle();
+      $(".expander-arrow").text("▲");
+      $(this).removeClass("expander--closed")
              .addClass("expander--open");
     }
     else {
-      jQuery(".expander-arrow").text("▼");
-      jQuery(".row--hidden").toggle();
-      jQuery(this).removeClass("expander--open")
+      $(".expander-arrow").text("▼");
+      $(".row--hidden").toggle();
+      $(this).removeClass("expander--open")
              .addClass("expander--closed");
     }
   },
@@ -23,20 +23,20 @@ var pricingTable = {
     const monthlyPreferred = "$127";
     const annuallyPreferred = "$97";
 
-    jQuery(".priceToggle").removeClass("priceToggle--active");
-    jQuery(this).addClass("priceToggle--active");
-    let nowShow = jQuery(this).attr("data-this");
+    $(".priceToggle").removeClass("priceToggle--active");
+    $(this).addClass("priceToggle--active");
+    let nowShow = $(this).attr("data-this");
     if (nowShow == "monthly") {
-      jQuery("#preferredPrice").html(monthlyPreferred);
-      jQuery(".annual-disclaimer").hide();
-      jQuery(".monthly-disclaimer").show();
+      $("#preferredPrice").html(monthlyPreferred);
+      $(".annual-disclaimer").hide();
+      $(".monthly-disclaimer").show();
     }
     else {
-      jQuery("#preferredPrice").html(annuallyPreferred);
-      jQuery(".annual-disclaimer").show();
-      jQuery(".monthly-disclaimer").hide();
+      $("#preferredPrice").html(annuallyPreferred);
+      $(".annual-disclaimer").show();
+      $(".monthly-disclaimer").hide();
     }
   }
 }
 
-jQuery(document).ready(pricingTable.init);
+$(document).ready(pricingTable.init);
