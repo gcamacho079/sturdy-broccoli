@@ -11,16 +11,7 @@
 <body>
 
   <div class="wrapper">
-    <div class="toggleWrapper"><button data-this="annually" class="priceToggle priceToggle--active">Annually</button><button data-this="monthly" class="priceToggle priceToggle--inactive">Monthly</button></div>
-
-    <h3 class="paymentDisclaimer annual-disclaimer">Save Up To 20% When Paid Annual</h3>
-    <h3 class="paymentDisclaimer monthly-disclaimer">Simple Month-to-Month Payments</h3>
     <table id="feature-table">
-      <colgroup>
-        <col class="first-column" />
-        <col class="second-column" />
-        <col class="third-column" />
-      </colgroup>
       <thead>
         <tr>
 
@@ -31,11 +22,19 @@
 
         <tr>
 
-          <th class="price-cell"><span class="price" id="basicPrice">$117</span> / mo<br /><span class="annual-disclaimer">Billed Annually</span>
+          <th class="price-cell">
+            <span class="price" id="preferredPrice">$117</span> / mo<br />
+            <span class="annual-disclaimer">Billed Annually or<br /><strong>$147</strong> month-to-month</span><br />$249 Annual Verification Fee Required
           </th>
-          <th class="price-cell"><span class="price" id="proPrice">$147</span> / mo<br /><span class="annual-disclaimer">Billed Annually</span>
+
+          <th class="price-cell">
+            <span class="price" id="preferredPrice">$147</span> / mo<br />
+            <span class="annual-disclaimer">Billed Annually or<br /><strong>$187</strong> month-to-month</span><br />$249 Annual Verification Fee Required
           </th>
-          <th class="price-cell"><span class="price" id="preferredPrice">$197</span> / mo<br /><span class="annual-disclaimer">Billed Annually</span>
+
+          <th class="price-cell">
+            <span class="price" id="preferredPrice">$197</span> / mo<br />
+            <span class="annual-disclaimer">Billed Annually or<br /><strong>$247</strong> month-to-month</span><br />$249 Annual Verification Fee Required
           </th>
         </tr>
         <tr>
@@ -316,6 +315,6 @@
             </table>
           </div>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-          <script src="js/subs.js" type="text/javascript"></script>
+          <script src="js/script.js" type="text/javascript"></script>
         </body>
         </html>
